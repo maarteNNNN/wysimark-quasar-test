@@ -1,5 +1,12 @@
 <template>
-  <Wysimark ref="wysimark" v-model="text" style="width: 100%" />
+  <div class="bw-wysimark">
+    <Wysimark
+      ref="wysimark"
+      class="bw-wysimark"
+      v-model="text"
+      style="width: 100%"
+    />
+  </div>
 </template>
 
 <script>
@@ -16,3 +23,9 @@ export default {
   components: { Wysimark },
 };
 </script>
+
+<style scoped>
+.bw-wysimark {
+  width: 100%;
+}
+</style>
